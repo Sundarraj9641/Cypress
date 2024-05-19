@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-02T05:50:51.265Z",
+    "end": "2023-08-02T05:50:54.700Z",
+    "duration": 3435,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a0688de-c72d-4474-b27d-aaff522bf96c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\upload file.cy.js",
+      "file": "cypress\\e2e\\upload file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "upload file",
+          "fullTitle": "upload file",
+          "timedOut": null,
+          "duration": 367,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\n//file from fixtures folder, so we directly give the name of the file\ncy.get('#myfile').attachFile('example.json');",
+          "err": {},
+          "uuid": "193582da-32c1-4231-ab27-f8b1499dc527",
+          "parentUUID": "4a0688de-c72d-4474-b27d-aaff522bf96c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "193582da-32c1-4231-ab27-f8b1499dc527"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 367,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

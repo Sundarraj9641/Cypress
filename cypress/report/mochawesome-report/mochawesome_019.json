@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 1,
+    "failures": 0,
+    "start": "2023-08-02T06:41:00.343Z",
+    "end": "2023-08-02T06:41:11.616Z",
+    "duration": 11273,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 33.33333333333333,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b66a4000-d1bb-4bdc-83db-c107539e1e46",
+      "title": "",
+      "fullFile": "cypress\\e2e\\describe only and skip.cy.js",
+      "file": "cypress\\e2e\\describe only and skip.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "095a677c-f90e-4f57-a067-46e913c447e5",
+          "title": "PositiveAndNegative",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login 1",
+              "fullTitle": "PositiveAndNegative login 1",
+              "timedOut": null,
+              "duration": 5129,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\n//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "aa3cf11f-97d9-434c-af75-467005da9d10",
+              "parentUUID": "095a677c-f90e-4f57-a067-46e913c447e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 2",
+              "fullTitle": "PositiveAndNegative login 2",
+              "timedOut": null,
+              "duration": 3927,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "7529554c-a291-492b-bacb-b9e5235643a9",
+              "parentUUID": "095a677c-f90e-4f57-a067-46e913c447e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 3",
+              "fullTitle": "PositiveAndNegative login 3",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('admin123');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "e39478e6-efe0-4d1b-a246-d1ac59c6407f",
+              "parentUUID": "095a677c-f90e-4f57-a067-46e913c447e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa3cf11f-97d9-434c-af75-467005da9d10",
+            "7529554c-a291-492b-bacb-b9e5235643a9"
+          ],
+          "failures": [],
+          "pending": [
+            "e39478e6-efe0-4d1b-a246-d1ac59c6407f"
+          ],
+          "skipped": [],
+          "duration": 9056,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

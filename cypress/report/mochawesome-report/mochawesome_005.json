@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-02T05:48:41.772Z",
+    "end": "2023-08-02T05:48:49.783Z",
+    "duration": 8011,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a513307-eb53-425d-a5ef-f7bc0c95a649",
+      "title": "",
+      "fullFile": "cypress\\e2e\\drag and drop with iframe.cy.js",
+      "file": "cypress\\e2e\\drag and drop with iframe.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4797b0ba-ced8-427f-8625-675a07302374",
+          "title": "JqueryUi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Drag and Drop with Iframe",
+              "fullTitle": "JqueryUi Drag and Drop with Iframe",
+              "timedOut": null,
+              "duration": 5089,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//get the iframe and store into $frame \ncy.get('.demo-frame').then($frame => {\n  //find the body of iframe and store into variable \"body\"\n  const body = $frame.contents().find('body');\n  //$frame is a jquery, convert this into cypress using -- cy.wrap()\n  //alias draggable as source -- as.('source)\n  cy.wrap(body).find('#draggable').as('source');\n  //alias droppable as target -- as.('source)\n  cy.wrap(body).find('#droppable').as('target');\n});\n//trigger -- used for mouse events\n//mousedown -- right click, {which:1} -- click at center\ncy.get('@source').trigger('mousedown', {\n  which: 1\n});\n//mousemove -- move the mouse, mouseup -- release the mouse\ncy.get('@target').trigger('mousemove', {\n  which: 1\n}).trigger('mouseup', {\n  force: true\n});",
+              "err": {},
+              "uuid": "5acaf483-ab3c-4b39-94dc-6d3bc76c2922",
+              "parentUUID": "4797b0ba-ced8-427f-8625-675a07302374",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5acaf483-ab3c-4b39-94dc-6d3bc76c2922"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5089,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

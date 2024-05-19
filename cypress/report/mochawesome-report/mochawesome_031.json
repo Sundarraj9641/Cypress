@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-02T06:43:25.006Z",
+    "end": "2023-08-02T06:43:38.113Z",
+    "duration": 13107,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51cf96be-311f-45e8-a820-b91696414e49",
+      "title": "",
+      "fullFile": "cypress\\e2e\\verify the attributes.cy.js",
+      "file": "cypress\\e2e\\verify the attributes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a692a1cc-9e86-49e7-8af4-e8bc5c2e77d2",
+          "title": "QATechHub",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Attributes",
+              "fullTitle": "QATechHub Verify Attributes",
+              "timedOut": null,
+              "duration": 2557,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//check for that <a> tag contains 'Click here'\ncy.contains('a', 'Click Here').as('button');\n//have.attr -- attribute\ncy.get('@button').should('have.attr', 'href').and('equal', 'https://qatechhub.com');\ncy.get('@button').should('have.attr', 'target').and('equal', '_blank');",
+              "err": {},
+              "uuid": "6756d9c3-e031-4620-9cf6-c3a7ec7e690b",
+              "parentUUID": "a692a1cc-9e86-49e7-8af4-e8bc5c2e77d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "navigate to target page by remove the target attribute",
+              "fullTitle": "QATechHub navigate to target page by remove the target attribute",
+              "timedOut": null,
+              "duration": 7030,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Click Here').as('button');\n//invoke('removeAttr', 'target') -- invoke the remove attribute method\n//target -- give the which attribute you want to remove\ncy.get('@button').invoke('removeAttr', 'target');\n//after removing attribute then navigate to the element\ncy.get('@button').click();",
+              "err": {},
+              "uuid": "44792dd1-62d6-4ef9-a409-a6514d061e2e",
+              "parentUUID": "a692a1cc-9e86-49e7-8af4-e8bc5c2e77d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6756d9c3-e031-4620-9cf6-c3a7ec7e690b",
+            "44792dd1-62d6-4ef9-a409-a6514d061e2e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9587,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

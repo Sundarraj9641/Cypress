@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-02T05:49:17.761Z",
+    "end": "2023-08-02T05:49:31.932Z",
+    "duration": 14171,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2a155ec4-737b-4f9c-b43f-532badbd2ad9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\group the test.cy.js",
+      "file": "cypress\\e2e\\group the test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a3fe829-8cea-47b8-a5e6-f71813856006",
+          "title": "PositiveAndNegative",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login 1",
+              "fullTitle": "PositiveAndNegative login 1",
+              "timedOut": null,
+              "duration": 5847,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\n//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "65d71a31-5712-4318-86da-bb2869aaaead",
+              "parentUUID": "5a3fe829-8cea-47b8-a5e6-f71813856006",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 2",
+              "fullTitle": "PositiveAndNegative login 2",
+              "timedOut": null,
+              "duration": 4923,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('Admin123');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `.oxd-userdropdown-name`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `.oxd-userdropdown-name`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/group the test.cy.js:25:7)",
+                "diff": null
+              },
+              "uuid": "ad32a985-2a58-4bd8-9140-76aaa0ff8475",
+              "parentUUID": "5a3fe829-8cea-47b8-a5e6-f71813856006",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65d71a31-5712-4318-86da-bb2869aaaead"
+          ],
+          "failures": [
+            "ad32a985-2a58-4bd8-9140-76aaa0ff8475"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10770,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

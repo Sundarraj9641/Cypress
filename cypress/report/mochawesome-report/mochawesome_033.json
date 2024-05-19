@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-02T08:14:22.804Z",
+    "end": "2023-08-02T08:14:40.710Z",
+    "duration": 17906,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "92761c6e-9ea4-4d69-8576-fea8bd61b756",
+      "title": "",
+      "fullFile": "cypress\\e2e\\enquiry.cy.js",
+      "file": "cypress\\e2e\\enquiry.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Enquiry",
+          "fullTitle": "Enquiry",
+          "timedOut": null,
+          "duration": 14353,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.fixture('data.json').then(info => {\n  cy.get('#enquire-name').type(info.name);\n  cy.wait(1000);\n  cy.get('#enquire-email').type(info.email);\n  cy.wait(1000);\n  cy.get('#enquire-mobile').type(info.mobile);\n  cy.wait(1000);\n  cy.get('#enquire-pincode').type(info.pincode);\n});\ncy.get(':nth-child(2) > .ccFormScheduler > :nth-child(1) > .enquire-form > .enquire-form__step-1 > #pdp-request-call-back-form > .form-group-global__enquire-form--elements-submit-wrap > .ctaComp').click();",
+          "err": {
+            "message": "CypressError: Timed out retrying after 2000ms: `cy.type()` could not be issued because this element is currently animating:\n\n`<input id=\"enquire-pincode\" class=\"form-global__field form-text-input__field commonTextComp\" name=\"ENQUIRE_PINCODE\" type=\"text\" required=\"\" data-form-validation=\"required pincode\" data-pincode-error=\"Enter a valid 6 digit Zip Code\" data-field-type=\"text-input\" placeholder=\"Pincode*\">`\n\nYou can fix this problem by:\n  - Passing `{force: true}` which disables all error checking\n  - Passing `{waitForAnimations: false}` which disables waiting on animations\n  - Passing `{animationDistanceThreshold: 20}` which decreases the sensitivity\n\nhttps://on.cypress.io/element-is-animating",
+            "estack": "CypressError: Timed out retrying after 2000ms: `cy.type()` could not be issued because this element is currently animating:\n\n`<input id=\"enquire-pincode\" class=\"form-global__field form-text-input__field commonTextComp\" name=\"ENQUIRE_PINCODE\" type=\"text\" required=\"\" data-form-validation=\"required pincode\" data-pincode-error=\"Enter a valid 6 digit Zip Code\" data-field-type=\"text-input\" placeholder=\"Pincode*\">`\n\nYou can fix this problem by:\n  - Passing `{force: true}` which disables all error checking\n  - Passing `{waitForAnimations: false}` which disables waiting on animations\n  - Passing `{animationDistanceThreshold: 20}` which decreases the sensitivity\n\nhttps://on.cypress.io/element-is-animating\n    at ensureElIsNotAnimating (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:139679:74)\n    at ensureNotAnimating (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:139952:3)\n    at runAllChecks (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:140072:9)\n    at retryActionability (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:140116:16)\n    at tryCatcher (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise.attempt.Promise.try (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16018:29)\n    at whenStable (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:156356:65)\n    at <unknown> (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:155797:14)\n    at tryCatcher (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16861:18)\n    at Promise._fulfill (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:16805:18)\n    at <unknown> (https://www.asianpaints.com/__cypress/runner/cypress_runner.js:18419:46)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/enquiry.cy.js:16:31)",
+            "diff": null
+          },
+          "uuid": "19176ed2-c8b3-4d22-bd00-cc15163bc0bd",
+          "parentUUID": "92761c6e-9ea4-4d69-8576-fea8bd61b756",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "19176ed2-c8b3-4d22-bd00-cc15163bc0bd"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 14353,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

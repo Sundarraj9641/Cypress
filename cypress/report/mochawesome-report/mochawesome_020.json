@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-02T06:41:17.186Z",
+    "end": "2023-08-02T06:41:17.595Z",
+    "duration": 409,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "613186ea-f6b5-4fdf-b86f-1d61b9137a42",
+      "title": "",
+      "fullFile": "cypress\\e2e\\download file.cy.js",
+      "file": "cypress\\e2e\\download file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Download file",
+          "fullTitle": "Download file",
+          "timedOut": null,
+          "duration": 386,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//https://prod.ucwe.capgemini.com/wp-content/uploads/2022/05/Capgemini.gif - file link\n//mydownloads -- folder name\n//file name and extension\ncy.downloadFile('https://prod.ucwe.capgemini.com/wp-content/uploads/2022/05/Capgemini.gif', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "d743a150-a7be-4cd2-8070-9be62645c726",
+          "parentUUID": "613186ea-f6b5-4fdf-b86f-1d61b9137a42",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "d743a150-a7be-4cd2-8070-9be62645c726"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 386,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

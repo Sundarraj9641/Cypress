@@ -1,0 +1,633 @@
+{
+  "stats": {
+    "suites": 11,
+    "tests": 15,
+    "passes": 9,
+    "pending": 1,
+    "failures": 5,
+    "testsRegistered": 15,
+    "passPercent": 60,
+    "pendingPercent": 6.666666666666667,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-07-27T07:36:01.951Z",
+    "end": "2023-07-27T07:38:01.497Z",
+    "duration": 119546
+  },
+  "results": [
+    {
+      "uuid": "01f15f01-7be5-472b-a635-1b2d672aced7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\before each.cy.js",
+      "file": "cypress\\e2e\\before each.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2491b521-8446-44b6-972c-294d4805af62",
+          "title": "PositiveAndNegative",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login 1",
+              "fullTitle": "PositiveAndNegative login 1",
+              "timedOut": null,
+              "duration": 7593,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "7d888d56-480a-45bf-9d31-4803894b8a5e",
+              "parentUUID": "2491b521-8446-44b6-972c-294d4805af62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 2",
+              "fullTitle": "PositiveAndNegative login 2",
+              "timedOut": null,
+              "duration": 6759,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "ln.enterUserName('Admin123');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `.oxd-userdropdown-name`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 2000ms: Expected to find element: `.oxd-userdropdown-name`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/before each.cy.js:22:7)",
+                "diff": null
+              },
+              "uuid": "214ef338-9e4d-49ea-b7c0-e20830aac830",
+              "parentUUID": "2491b521-8446-44b6-972c-294d4805af62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7d888d56-480a-45bf-9d31-4803894b8a5e"
+          ],
+          "failures": [
+            "214ef338-9e4d-49ea-b7c0-e20830aac830"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14352,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5acd4487-01a4-48c2-86e9-5ccd9ffcb36d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\describe only and skip.cy.js",
+      "file": "cypress\\e2e\\describe only and skip.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73a20ad5-43d9-4ffa-b871-04666e29205e",
+          "title": "PositiveAndNegative",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login 1",
+              "fullTitle": "PositiveAndNegative login 1",
+              "timedOut": null,
+              "duration": 6589,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\n//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "1ef7193c-d995-41c8-b6bc-cc264bbc89d5",
+              "parentUUID": "73a20ad5-43d9-4ffa-b871-04666e29205e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 2",
+              "fullTitle": "PositiveAndNegative login 2",
+              "timedOut": null,
+              "duration": 4180,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "8bbd2383-7bc3-4077-b35e-af6801fdd20b",
+              "parentUUID": "73a20ad5-43d9-4ffa-b871-04666e29205e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 3",
+              "fullTitle": "PositiveAndNegative login 3",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('admin123');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "fd478efc-2840-4a1b-811c-a4a7d08eed7f",
+              "parentUUID": "73a20ad5-43d9-4ffa-b871-04666e29205e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ef7193c-d995-41c8-b6bc-cc264bbc89d5",
+            "8bbd2383-7bc3-4077-b35e-af6801fdd20b"
+          ],
+          "failures": [],
+          "pending": [
+            "fd478efc-2840-4a1b-811c-a4a7d08eed7f"
+          ],
+          "skipped": [],
+          "duration": 10769,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bd431b48-839e-4fc1-8acf-aa3eaf54b455",
+      "title": "",
+      "fullFile": "cypress\\e2e\\download file.cy.js",
+      "file": "cypress\\e2e\\download file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Download file",
+          "fullTitle": "Download file",
+          "timedOut": null,
+          "duration": 843,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//https://prod.ucwe.capgemini.com/wp-content/uploads/2022/05/Capgemini.gif - file link\n//mydownloads -- folder name\n//file name and extension\ncy.downloadFile('https://prod.ucwe.capgemini.com/wp-content/uploads/2022/05/Capgemini.gif', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "e8c88dff-ffb1-408c-baac-68744eee6083",
+          "parentUUID": "bd431b48-839e-4fc1-8acf-aa3eaf54b455",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e8c88dff-ffb1-408c-baac-68744eee6083"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 843,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "040699ea-8430-4669-9030-5cc1b2c49ff5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\group the test.cy.js",
+      "file": "cypress\\e2e\\group the test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f5ec2d92-aa25-4e80-a9df-d423a789ecb8",
+          "title": "PositiveAndNegative",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login 1",
+              "fullTitle": "PositiveAndNegative login 1",
+              "timedOut": null,
+              "duration": 7057,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\n//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {},
+              "uuid": "46c01e2c-61ec-4c48-a780-7489269ec79f",
+              "parentUUID": "f5ec2d92-aa25-4e80-a9df-d423a789ecb8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login 2",
+              "fullTitle": "PositiveAndNegative login 2",
+              "timedOut": null,
+              "duration": 979,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\nln.enterUserName('Admin123');\nln.enterPassword('admin123');\nln.clicklogin();\ncy.get('.oxd-userdropdown-name').click();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://opensource-demo.orangehrmlive.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=opensource-demo.orangehrmlive.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://opensource-demo.orangehrmlive.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=opensource-demo.orangehrmlive.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:147800:13)\n    at tryCatcher (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/group the test.cy.js:21:7)",
+                "diff": null
+              },
+              "uuid": "f883892c-a024-4590-8597-dd7283282d95",
+              "parentUUID": "f5ec2d92-aa25-4e80-a9df-d423a789ecb8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46c01e2c-61ec-4c48-a780-7489269ec79f"
+          ],
+          "failures": [
+            "f883892c-a024-4590-8597-dd7283282d95"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8036,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0cbb0352-c5fd-4a2e-9225-72ea7d9683b1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "page",
+          "fullTitle": "page",
+          "timedOut": null,
+          "duration": 774,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/');\n//invoking methods in the class\nln.enterUserName('Admin');\nln.enterPassword('admin123');\nln.clicklogin();",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://opensource-demo.orangehrmlive.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=opensource-demo.orangehrmlive.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://opensource-demo.orangehrmlive.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=opensource-demo.orangehrmlive.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:55675/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (http://localhost:55675/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (http://localhost:55675/__cypress/runner/cypress_runner.js:147800:13)\n    at tryCatcher (http://localhost:55675/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:55675/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:55675/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://localhost:55675/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://localhost:55675/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (http://localhost:55675/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://localhost:55675/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:55675/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:55675/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/login.cy.js:11:11)",
+            "diff": null
+          },
+          "uuid": "db3b1b81-b006-4110-94a0-86696c6f46ea",
+          "parentUUID": "0cbb0352-c5fd-4a2e-9225-72ea7d9683b1",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "db3b1b81-b006-4110-94a0-86696c6f46ea"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 774,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ebe47b7b-a1a6-4902-9ea0-27e5ded5f23d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\open google.cy.js",
+      "file": "cypress\\e2e\\open google.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "open google",
+          "fullTitle": "open google",
+          "timedOut": null,
+          "duration": 404,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "//navigate to url\ncy.visit('https://google.com');\n//wait for 2 sec\ncy.wait(2000);\n//locate the textbox and type the value\ncy.get('#APjFqb').type('Capgemini');\ncy.wait(2000);\n//locate and click\ncy.contains('Google Search').click();\ncy.wait(2000);\ncy.get('.g > :nth-child(1) > [jscontroller=\"SC7lYd\"] > .GLI8Bc > .jGGQ5e > .yuRUbf > a > .LC20lb').click();",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://google.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=google.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://google.com/\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx`.\n\nThis http request was redirected '1' time to:\n\n  - 303: https://chn1fw.corp.capgemini.com:7831/XX/YY/ZZ/cpauth?scheme=https&4Tmthd=0&host=google.com&port=443&uri=Lw==&\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:55675/__cypress/runner/cypress_runner.js:147817:84)\n    at visitFailedByErr (http://localhost:55675/__cypress/runner/cypress_runner.js:147225:12)\n    at <unknown> (http://localhost:55675/__cypress/runner/cypress_runner.js:147800:13)\n    at tryCatcher (http://localhost:55675/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://localhost:55675/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://localhost:55675/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://localhost:55675/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://localhost:55675/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (http://localhost:55675/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://localhost:55675/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:55675/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://localhost:55675/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/open google.cy.js:3:7)",
+            "diff": null
+          },
+          "uuid": "61734517-17c0-4781-a5b2-3d9911436f8f",
+          "parentUUID": "ebe47b7b-a1a6-4902-9ea0-27e5ded5f23d",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "61734517-17c0-4781-a5b2-3d9911436f8f"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 404,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cc866fea-dfb1-4b68-8a0b-638270163d05",
+      "title": "",
+      "fullFile": "cypress\\e2e\\read file using fixture.cy.js",
+      "file": "cypress\\e2e\\read file using fixture.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Read file using fixture",
+          "fullTitle": "Read file using fixture",
+          "timedOut": null,
+          "duration": 179,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//example.json -- file name\n// data -- variable, that store all the data from the example.json file\ncy.fixture('example.json').then(data => {\n  //call the name using the data(variable)\n  cy.log(data.name);\n  cy.log(data.email);\n  cy.log(data.body);\n  //run by before function\n  cy.log(this.test_data.name);\n});",
+          "err": {},
+          "uuid": "e45d21ec-9d64-469f-a48e-60c242e9cc65",
+          "parentUUID": "cc866fea-dfb1-4b68-8a0b-638270163d05",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e45d21ec-9d64-469f-a48e-60c242e9cc65"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 179,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b41f7bea-d61f-48b1-b86c-555a24896c23",
+      "title": "",
+      "fullFile": "cypress\\e2e\\read file using readfile method.cy.js",
+      "file": "cypress\\e2e\\read file using readfile method.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Read file using readfile()",
+          "fullTitle": "Read file using readfile()",
+          "timedOut": null,
+          "duration": 105,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//give complete path here\n// data -- variable, that store all the data from the example.json file\ncy.readFile('./cypress/fixtures/example.json').then(data => {\n  cy.log(data.email);\n  cy.log(data.body);\n});",
+          "err": {},
+          "uuid": "335a1932-9133-48fb-ac1c-74e176449b48",
+          "parentUUID": "b41f7bea-d61f-48b1-b86c-555a24896c23",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "335a1932-9133-48fb-ac1c-74e176449b48"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 105,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c0d8236b-5d73-4a11-8753-65c764fef4d6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\upload file.cy.js",
+      "file": "cypress\\e2e\\upload file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "upload file",
+          "fullTitle": "upload file",
+          "timedOut": null,
+          "duration": 699,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\n//file from fixtures folder, so we directly give the name of the file\ncy.get('#myfile').attachFile('example.json');",
+          "err": {},
+          "uuid": "488570b9-eb69-46f3-a717-53b163377907",
+          "parentUUID": "c0d8236b-5d73-4a11-8753-65c764fef4d6",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "488570b9-eb69-46f3-a717-53b163377907"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 699,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "735d65f8-fc2e-4e8c-8ec0-f98f2dc9b925",
+      "title": "",
+      "fullFile": "cypress\\e2e\\write file.cy.js",
+      "file": "cypress\\e2e\\write file.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Write file",
+          "fullTitle": "Write file",
+          "timedOut": null,
+          "duration": 185,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "// \"\\n\" for move the cursor to next line\ncy.writeFile('writeFileDemo.txt', 'Hello, I am Sundarraj\\n');\n//{flag:'a+'} -- to avoid overwriting the content\n//if we won't give this. It will replace the previous one\ncy.writeFile('writeFileDemo.txt', 'I am testing the write file', {\n  flag: 'a+'\n});\ncy.writeFile('./cypress/fixtures/writeFilesample.txt', 'specify the path of that file to be store');",
+          "err": {},
+          "uuid": "4ed6aa92-2dad-4e0a-9f86-70d5f2ae35c2",
+          "parentUUID": "735d65f8-fc2e-4e8c-8ec0-f98f2dc9b925",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "4ed6aa92-2dad-4e0a-9f86-70d5f2ae35c2"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 185,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3325a865-2ae2-4ab1-ab51-d141c477118e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertion.cy.js",
+      "file": "cypress\\e2e\\assertion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "assertion",
+          "fullTitle": "assertion",
+          "timedOut": null,
+          "duration": 589,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "//navigate to url\ncy.visit('https://example.cypress.io');\n//get the element\ncy.contains('get').click();\n//get the button element and check whether the text 'Button' is present or not\ncy.get('#query-btn').should('contain', 'Button').and('have.class', 'query-btn btn btn-primary').and('be.visible').and('be.enabled');\n//explicit asssertion only show the log when it is fail, if the assertion will pass it won't show the log\n//check 4 and 5 are equal, if not equal then print 'Not Equal'\nassert.equal(4, 5, 'Not Equal');\nassert.equal(4, 4, 'Not Equal');\n//we compare the integer and string, in equal() it will pass \nassert.equal(4, '4', 'Not Equal');\n//but in strictequal() it will fail\nassert.strictEqual(4, '4', 'Not Equal');",
+          "err": {
+            "message": "AssertionError: Not Equal: expected 4 to equal 5",
+            "estack": "AssertionError: Not Equal: expected 4 to equal 5\n    at Context.eval (webpack:///./cypress/e2e/assertion.cy.js:16:15)",
+            "diff": "- 4\n+ 5\n"
+          },
+          "uuid": "87cfc4fe-2c9f-4766-959d-c1b459d15f9d",
+          "parentUUID": "3325a865-2ae2-4ab1-ab51-d141c477118e",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "87cfc4fe-2c9f-4766-959d-c1b459d15f9d"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 589,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
